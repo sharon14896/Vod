@@ -1,9 +1,14 @@
 import React from 'react'
 
-const movie = () => {
+const Movie = ({item}) => {
+  const{Title,imdbID,Poster}=item
   return (
-    <div>movie</div>
+    <div className='col-md-3 col-6 p-3 ' >
+      <button>
+      <img src={Poster} width={'100%'} alt="" />
+      </button>
+    </div>
   )
 }
 
-export default movie
+export default Movie

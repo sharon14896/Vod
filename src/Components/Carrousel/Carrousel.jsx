@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from '../../Layout/Header/Header';
 import Home from '../home/Home';
 import "./Carrousel.css";
 
 
 const Carrousel = () => {
   return (
-    <section className="home">
+    <section className="home bg-dark">
         <div id="carousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-controls">
             <div className="carousel-indicators ">
@@ -171,9 +172,12 @@ const Carrousel = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-      <div>
-            <Home/>
-      </div>
+        <div>
+          <Header/>
+        </div>
+          <div>
+          <Home/>
+        </div>
       </section>
   )
 }
