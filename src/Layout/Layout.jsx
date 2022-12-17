@@ -6,7 +6,7 @@ import Header from './Header/Header'
 const Layout = () => {
   return (
     <div>
-        {/* <Header/> */}
+         {/* <Header/> */}
         <Outlet/>
         <Footer/>
     </div>
