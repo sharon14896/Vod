@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from '../home/Home';
 import "./Carrousel.css";
 
 
@@ -170,6 +171,9 @@ const Carrousel = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
+      <div>
+            <Home/>
+      </div>
       </section>
   )
 }

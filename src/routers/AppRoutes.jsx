@@ -12,8 +12,6 @@ const AppRoutes = () => {
         <Routes>
           <Route path='/' element={<Layout/>}>
             <Route index element={<Carrousel/>}></Route>
-            <Route path='/Page1' element={<Page1/>}></Route>
-            <Route path='/Page2' element={<Page2/>}></Route>
             </Route>
         </Routes>
     </Router>
