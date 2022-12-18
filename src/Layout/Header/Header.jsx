@@ -1,10 +1,15 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import Home from '../../Components/home/Home';
-import Movie from '../../Components/Pages/movie/Movie';
 
-const Header = () => {
 
+const Header = ({setYear}) => {
+  const nav = useNavigate();
+
+  const search=(date)=>{
+    setYear(date);
+    nav('Home/search/'+date)
+
+  }
   return (
     <nav className="navbar navbar-expand-lg bg-dark">
   <div className="container-fluid">
@@ -15,7 +20,7 @@ const Header = () => {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-        <Link className="nav-link text-white" aria-current="page" >2020</Link>
+        <Link onClick={()=>search(2020)} className="nav-link text-white" aria-current="page"  >2020</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link text-white" aria-current="page" to={'/Page2'}>Page 2</Link>

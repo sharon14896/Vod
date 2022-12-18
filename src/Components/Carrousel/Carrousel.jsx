@@ -1,10 +1,11 @@
-import React from 'react';
-import Header from '../../Layout/Header/Header';
-import Home from '../home/Home';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./Carrousel.css";
 
 
-const Carrousel = () => {
+const Carrousel = ({setQuerys}) => {
+
+
   return (
     <section className="home bg-dark">
         <div id="carousel" className="carousel slide" data-bs-ride="carousel">
@@ -116,7 +117,7 @@ const Carrousel = () => {
               <div className="container">
                 <h2> the only good one </h2>
                 <div className="form mx-auto mb-sm-8">
-                  <input
+                  <input onChange={(Search)=>setQuerys(Search.target.value)}
                     className="input"
                     placeholder="Type your text"
                     required=""
@@ -171,12 +172,6 @@ const Carrousel = () => {
             ></span>
             <span className="visually-hidden">Next</span>
           </button>
-        </div>
-        <div>
-          <Header/>
-        </div>
-          <div>
-          <Home/>
         </div>
       </section>
   )

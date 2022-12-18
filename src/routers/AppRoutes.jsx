@@ -10,8 +10,8 @@ const AppRoutes = () => {
     <Router>
         <Routes>
           <Route path='/' element={<Layout/>}>
-            <Route index element={<Carrousel/>}></Route>
-            {/* <Route path='/Home' element={<Home/>}></Route> */}
+            <Route index element={<Home/>}></Route>
+            <Route path='/search/:Title/year/:year' element={<Home/>}></Route>
             </Route>
         </Routes>
     </Router>
