@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import "./Carrousel.css";
+import { FcSearch } from "react-icons/fc";
 
+const Carrousel = () => {
 
-const Carrousel = ({setQuerys}) => {
+  const [Query, setQuerys] = useState("");
+  const nav = useNavigate();
 
+  
 
   return (
     <section className="home bg-dark">
@@ -57,12 +61,10 @@ const Carrousel = ({setQuerys}) => {
               <div className="container ">
                 <h2> comedy to all family</h2>
                 <div className="form mx-auto mb-sm-8">
-                  <input
-                    className="input"
-                    placeholder="Type your text"
-                    required=""
-                    type="text"
-                  />
+                <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
+                 { nav(`/search/${Query}`)} }}
+                    type="search" placeholder='search...' className=' input' />
+                    <FcSearch onClick={()=> nav(`/search/${Query}`)}  to={'/search/' + Query} />
                   <span className="input-border"></span>
                 </div>
               </div>
@@ -77,12 +79,10 @@ const Carrousel = ({setQuerys}) => {
               <div className="container ">
                 <h2> comedy to all family</h2>
                 <div className="form mx-auto mb-sm-8">
-                  <input
-                    className="input"
-                    placeholder="Type your text"
-                    required=""
-                    type="text"
-                  />
+                <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
+                 { nav(`/search/${Query}`)} }}
+                    type="search" placeholder='search...' className=' input' />
+                    <FcSearch onClick={()=> nav(`/search/${Query}`)}  to={'/search/' + Query} />
                   <span className="input-border"></span>
                 </div>
               </div>
@@ -97,12 +97,10 @@ const Carrousel = ({setQuerys}) => {
               <div className="container">
                 <h2> the only good one </h2>
                 <div className="form mx-auto mb-sm-8">
-                  <input
-                    className="input"
-                    placeholder="Type your text"
-                    required=""
-                    type="text"
-                  />
+                <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
+                 { nav(`/search/${Query}`)} }}
+                    type="search" placeholder='search...' className=' input' />
+                    <FcSearch onClick={()=> nav(`/search/${Query}`)}  to={'/search/' + Query} />
                   <span className="input-border"></span>
                 </div>
               </div>
@@ -117,12 +115,10 @@ const Carrousel = ({setQuerys}) => {
               <div className="container">
                 <h2> the only good one </h2>
                 <div className="form mx-auto mb-sm-8">
-                  <input onChange={(Search)=>setQuerys(Search.target.value)}
-                    className="input"
-                    placeholder="Type your text"
-                    required=""
-                    type="text"
-                  />
+                <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
+                 { nav(`/search/${Query}`)} }}
+                    type="search" placeholder='search...' className=' input' />
+                    <FcSearch onClick={()=> nav(`/search/${Query}`)}  to={'/search/' + Query} />
                   <span className="input-border"></span>
                 </div>
               </div>
@@ -137,12 +133,10 @@ const Carrousel = ({setQuerys}) => {
               <div className="container">
                 <h2> tell me why?</h2>
                 <div className="form mx-auto mb-sm-8">
-                  <input
-                    className="input"
-                    placeholder="Type your text"
-                    required=""
-                    type="text"
-                  />
+                <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
+                 { nav(`/search/${Query}`)} }}
+                    type="search" placeholder='search...' className=' input' />
+                    <FcSearch onClick={()=> nav(`/search/${Query}`)}  to={'/search/' + Query} />
                   <span className="input-border"></span>
                 </div>
               </div>
