@@ -6,7 +6,7 @@ const Movie = ({movies}) => {
     <div className='container '>
     <div className="row">
         {movies.map(item => {
-            item.Poster = item.Poster != "N/A" ? item.Poster : "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            if(item.Poster != "N/A"){
             return (
                 <div key={item.imdbID} className='col-md-3 col-6 mb-5 '>
                     <Link className='btn btn-dark' to={"/video/" + item.imdbID}>
@@ -16,6 +16,7 @@ const Movie = ({movies}) => {
                     </Link>
                 </div>                         
             )
+            }
         })}
         </div>  
         </div>  

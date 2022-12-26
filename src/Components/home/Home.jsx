@@ -28,8 +28,8 @@ const getApi=async()=>{
 
   return (
     <div className='bg-dark' >
-     <Carrousel />
-     <Header Year={Year} />
+     <Carrousel/>
+     <Header />
      {loading&&<img style={{height:'60px',width:'80px'}} src='https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif'></img>}
      <div className="d-flex justify-content-center mt-5">
      {!movies.length && !loading && <h2  className='text-white'>No results...</h2>}
