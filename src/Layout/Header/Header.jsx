@@ -3,20 +3,22 @@ import { Link, useNavigate } from 'react-router-dom'
 
 
 const Header = () => {
-    const [Year, setarYears] = useState(["Home",1950, 1960, 1970, 1980, 1900, 2000, 2010, 2020,2022]);
+    const [Year, setarYears] = useState([1950, 1960, 1970, 1980, 1900, 2000, 2010, 2020,2022]);
 
   return (
     <nav className="navbar navbar-expand-lg bg-dark ">
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
+       <Link className="navbar-brand text-white p-2 " to={'/'}>Home</Link>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto ">
         <li className="nav-item">
-        <div className='col-auto p-0 mx-auto'>
            {Year.map(item => {
                return (
-                   <Link key={item} to={`/year/${item}`} className='class="nav-link active text-white'>{item}</Link>
+                   <Link key={item} to={`/year/${item}`} className=' text-white col-auto btn '>{item}</Link>
                    )
                })}
-           </div>
         </li>
       </ul>
     </div>

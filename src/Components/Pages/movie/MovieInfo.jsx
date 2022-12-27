@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import Header from '../../../Layout/Header/Header';
 import NavBar from '../../../Layout/NavBar/NavBar';
+import Stars from '../../Stars';
 
 const MovieInfo = () => {
   const [movie, setMovie] = useState({});
@@ -30,11 +31,13 @@ const MovieInfo = () => {
       { loading? <img style={{height:'60px',width:'80px'}} src='https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif'></img> :
       <div  style={{borderRadius:'20px'}}  className='d-flex p-2 col-lg-6 mx-auto bg-dark'>
         <img src={movie.Poster} />
-        <div className=' '>
+        <div className='text-white '>
         <h2>{movie.Title}</h2>
-        <div className='text-info'>Year:{movie.Year}</div>
-        <div className='text-info'>Score:{movie.imdbRating}</div>
-        <div className='text-info'>Vote Count:{movie.imdbVotes}</div>
+        <div className=''>{movie.Plot}</div>
+        <div className=''>Genre: {movie.Genre}</div>
+        <div className=''>Actors: {movie.Actors}</div>
+        <div className=''>Year: {movie.Year}</div>
+        <div className=''>Score:<Stars rating={movie.imdbRating}/></div>
         </div>
       </div>
       }

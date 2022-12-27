@@ -2,9 +2,9 @@ import axios from 'axios'
 import React, { useState ,useEffect} from 'react'
 import { useParams} from 'react-router-dom'
 import Header from '../../Layout/Header/Header'
-import NavBar from '../../Layout/NavBar/NavBar'
 import Carrousel from '../Carrousel/Carrousel'
 import Movie from '../Pages/movie/Movie'
+
 
 const Home = () => {
   const [movies,setMovies]=useState([])
