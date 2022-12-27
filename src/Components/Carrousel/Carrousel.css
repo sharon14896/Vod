@@ -129,9 +129,6 @@ position: relative;
 }
 
 
-.container{
-    margin-top: 80px; 
-}
 
 
 
@@ -143,6 +140,15 @@ position: relative;
     .container{
         margin-top: 95px; 
     }
+    
+  }
+  
+  @media screen and (max-width: 669px) {
+
+    .container{
+        margin-top: 40px; 
+    }
+    
     
   }
   
