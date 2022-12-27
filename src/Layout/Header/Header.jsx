@@ -13,7 +13,7 @@ const Header = () => {
         <div className='col-auto p-0 mx-auto'>
            {Year.map(item => {
                return (
-                   <Link key={item} to={`/year/${item}`} className='col-auto btn me-1 text-white'>{item}</Link>
+                   <Link key={item} to={`/year/${item}`} className='class="nav-link active text-white'>{item}</Link>
                    )
                })}
            </div>
@@ -25,3 +25,6 @@ const Header = () => {
 }
 
 export default Header
+
+
+
