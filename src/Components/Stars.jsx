@@ -7,6 +7,7 @@ const Stars = ({rating}) => {
   const fullStars = Math.floor(rating);
   const halfStars = rating - fullStars >= 0.5 ? 1 : 0;
   const emptyStars = 5 - fullStars - halfStars;
+  
 
   // Generate an array of stars
   const stars = [];

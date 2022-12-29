@@ -18,7 +18,7 @@ useEffect(()=>{
 const getApi=async()=>{
   setLoading(true);
   let url=`https://www.omdbapi.com/?s=${serchQuerys||"bank"}&y=${Year}&apikey=f35d9868`
-  console.log(url);
+
   const{data}=await axios.get(url);
   setMovies(data.Search||[])
   setLoading(false);
