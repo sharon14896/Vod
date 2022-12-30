@@ -113,7 +113,7 @@ const Carrousel = () => {
                 backgroundImage:
                   "url('https://images.hdqwalls.com/download/sonic-the-hedgehogart-ma-1920x1024.jpg')",
               }}
-            >a
+            >
               <div className="container">
                 <h2> Animation </h2>
                 <div className="form mx-auto mb-sm-8">
