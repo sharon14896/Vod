@@ -79,7 +79,7 @@ const Carrousel = () => {
               }}
             >
               <div className="container ">
-                <h2> Comedy Adventure Fantasy</h2>
+                <h2>Fantasy</h2>
                 <div className="form mx-auto mb-sm-8">
                 <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
                  {Query.length&& nav(`/search/${Query}`)} }}
@@ -97,7 +97,7 @@ const Carrousel = () => {
               }}
             >
               <div className="container">
-                <h2> Action-adventure </h2>
+                <h2> Adventure </h2>
                 <div className="form mx-auto mb-sm-8">
                 <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
                  {Query.length&& nav(`/search/${Query}`)} }}
@@ -133,7 +133,7 @@ const Carrousel = () => {
               }}
             >
               <div className="container">
-                <h2> Action</h2>
+                <h2> Crime</h2>
                 <div className="form mx-auto mb-sm-8">
                 <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
                  {Query.length&& nav(`/search/${Query}`)} }}
