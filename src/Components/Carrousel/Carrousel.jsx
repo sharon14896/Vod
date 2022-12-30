@@ -13,7 +13,7 @@ const Carrousel = () => {
   
 
   return (
-    <section className="home bg-dark">
+    <section className="home bg-black">
         <div id="carousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-controls">
             <div className="carousel-indicators ">
