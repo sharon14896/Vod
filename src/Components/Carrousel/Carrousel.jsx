@@ -61,7 +61,7 @@ const Carrousel = () => {
               }}
             >
               <div className="container ">
-                <h2> comedy to all family</h2>
+                <h2> Action </h2>
                 <div className="form mx-auto mb-sm-8">
                 <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
                  {Query.length&& nav(`/search/${Query}`)} }}
@@ -79,7 +79,7 @@ const Carrousel = () => {
               }}
             >
               <div className="container ">
-                <h2> comedy to all family</h2>
+                <h2> Comedy Adventure Fantasy</h2>
                 <div className="form mx-auto mb-sm-8">
                 <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
                  {Query.length&& nav(`/search/${Query}`)} }}
@@ -97,7 +97,7 @@ const Carrousel = () => {
               }}
             >
               <div className="container">
-                <h2> the only good one </h2>
+                <h2> Action-adventure </h2>
                 <div className="form mx-auto mb-sm-8">
                 <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
                  {Query.length&& nav(`/search/${Query}`)} }}
@@ -115,7 +115,7 @@ const Carrousel = () => {
               }}
             >
               <div className="container">
-                <h2> the only good one </h2>
+                <h2> Animation </h2>
                 <div className="form mx-auto mb-sm-8">
                 <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
                  {Query.length&& nav(`/search/${Query}`)} }}
@@ -133,7 +133,7 @@ const Carrousel = () => {
               }}
             >
               <div className="container">
-                <h2> tell me why?</h2>
+                <h2> Action</h2>
                 <div className="form mx-auto mb-sm-8">
                 <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
                  {Query.length&& nav(`/search/${Query}`)} }}

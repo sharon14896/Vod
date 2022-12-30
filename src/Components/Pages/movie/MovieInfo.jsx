@@ -24,29 +24,31 @@ const MovieInfo = () => {
   }
 
   return (
-    <div className='bg-dark'>
+    <div>
       <NavBar/>
-    <div className=' '>
+    <div className=' d-flex align-items-center justify-content-center bg-black'>
       { loading? <img style={{height:'60px',width:'80px'}} src='https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif'></img> :
-      <div  style={{borderRadius:'20px'}}  className='d-flex p-2 col-lg-6 mx-auto bg-dark'>
-        <img src={movie.Poster} />
-        <div className='text-white '>
-        <h2>{movie.Title}</h2>
-        <div className=''>{movie.Plot}</div>
-        <div className=''>Genre: {movie.Genre}</div>
-        <div className=''>Actors: {movie.Actors}</div>
-        <div className=''>Year: {movie.Year}</div>
-        <div className=''>Score:<Stars rating={movie.imdbRating}/></div>
+      <div  style={{minHeight:'88vh'}} >
+        <div className='container-fluid'>
+          <div className='row align-items-center justify-content-center '>  
+              <img src={movie.Poster} className='rounded-5 'style={{height:"350px",width:"290px"}} />
+              <div className='text-white col-md-7  p-5  '>
+                <h2 className='text-light '>{movie.Title}</h2>
+                <div className=''>{movie.Plot}</div>
+                <div className=''>Genre: {movie.Genre}</div>
+                <div className=''>Actors: {movie.Actors}</div>
+                <div className=''>Year: {movie.Year}</div>
+                <div className=''>Score: <Stars rating= {movie.imdbRating}/></div>
+                <div className=' mt-5' >
+                <button className=' btn btn-outline-light ' onClick={() => navigate(-1)}>Go back</button>
+                </div>
+              </div>
+           </div>
         </div>
       </div>
       }
-      <div className=' d-flex justify-content-center'>
-        <button className=' btn btn-danger' onClick={() => navigate(-1)}>Go back</button>
-      </div>
-        
-      
     </div>
-    </div>
+  </div>
     
   )
 }

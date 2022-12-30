@@ -56,9 +56,14 @@ position: relative;
     z-index: 10;
 }
 .home .carousel-indicators button{
-    width:20px;
-    height: 20px;
+    width:30px;
+    position: relative;
+    height: 27px;
     border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #221e1e2f;
+    box-shadow: 0 0 50px rgb(255, 252, 252);
 
 }
 .form {

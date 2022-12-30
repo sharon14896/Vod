@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link} from 'react-router-dom'
 
 
 const Header = () => {
-    const [Year, setarYears] = useState([1950, 1960, 1970, 1980, 1900, 2000, 2010, 2020,2022]);
+    const [Year, setarYears] = useState([1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020,2022]);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-dark ">
+    <nav className="navbar navbar-expand-lg bg-black ">
        <Link className="navbar-brand text-white p-2 " to={'/'}>Home</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
+        <button className="navbar-toggler bg-white rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon bg-white rounded-3"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto ">

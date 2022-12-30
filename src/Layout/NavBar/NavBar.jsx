@@ -7,9 +7,9 @@ const NavBar = () => {
   const nav = useNavigate();
 
   return (
-    <nav className="navbar navbar-expand-lg bg-dark ">
+    <nav className="navbar navbar-expand-lg bg-black ">
       <div className="container-fluid">
-          <Link  className="navbar-brand text-white" to={'/'}>Home</Link>
+          <Link  className="navbar-brand text-danger" to={'/'}><h1>Home</h1></Link>
                     <div className="col-lg-4 d-flex justify-content-end ">
                       <div className=" d-flex justify-content-between">
                         <input value={Query} onInput={(e)=> setQuerys(e.target.value)} onKeyDown={(e) => { if (e.key == 'Enter')
